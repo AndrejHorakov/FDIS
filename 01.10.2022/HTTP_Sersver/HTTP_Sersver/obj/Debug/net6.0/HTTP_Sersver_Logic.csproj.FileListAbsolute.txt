@@ -1,0 +1,15 @@
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\bin\Debug\net6.0\HTTP_Sersver_Logic.exe
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\bin\Debug\net6.0\HTTP_Sersver_Logic.deps.json
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\bin\Debug\net6.0\HTTP_Sersver_Logic.runtimeconfig.json
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\bin\Debug\net6.0\HTTP_Sersver_Logic.dll
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\bin\Debug\net6.0\HTTP_Sersver_Logic.pdb
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.csproj.AssemblyReference.cache
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.AssemblyInfoInputs.cache
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.AssemblyInfo.cs
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.csproj.CoreCompileInputs.cache
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.dll
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\refint\HTTP_Sersver_Logic.dll
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.pdb
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\HTTP_Sersver_Logic.genruntimeconfig.cache
+D:\Server_App\HTTP_Sersver_Logic\HTTP_Sersver_Logic\obj\Debug\net6.0\ref\HTTP_Sersver_Logic.dll

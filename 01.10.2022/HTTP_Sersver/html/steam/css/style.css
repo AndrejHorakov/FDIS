@@ -1,0 +1,600 @@
+::-webkit-scrollbar {
+    height: 12px;
+    width: 14px;
+    background: transparent;
+    z-index: 12;
+    overflow: visible;
+}
+::-webkit-scrollbar-corner {
+    background: #202020;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #434953;
+    border-radius: 10px;
+    z-index: 12;
+    border: 4px solid rgba(0,0,0,0);
+    background-clip: padding-box;
+    transition: background-color.32sease-in-out;
+    margin: 4px;
+    min-height: 32px;
+    min-width: 32px;
+}
+
+html.responsive {
+    height: 100%;
+}
+html.responsive body {
+    min-height: 100%;
+    height: auto;
+    position: relative;
+}
+
+body {
+    background: #181A21;
+    font-family: "Motiva Sans", Sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.pageContent {
+    min-height: 100%;
+    background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(https://store.akamai.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg) center top no-repeat, #181A21;
+    overflow: hidden;
+}
+.container {
+    min-width: 940px;
+    min-height: 70px;
+    margin: 0;
+    padding: 0;
+    background-color: #171a21;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    justify-content: center;
+}
+
+
+.responsiveTop {
+    display: none;
+    padding: 13px 8px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.burger_button {
+    left: 8px;
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    width: 36px;
+    height: 31px;
+}
+.responsive_menu_main {
+    display: none;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    background-color: #171a21;
+    width: 280px;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+.responsive_menu_footer_spacer {
+    height: 160px;
+}
+.logoImgResponsive {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+.button {
+    background-color: transparent;
+    border: none;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    width: 36px;
+    height: 31px;
+    z-index: 15;
+}
+.button:hover .responsive_menu_main {
+    display: flex;
+}
+.responsive_menu_content {
+    font-size: 22px;
+    position: relative;
+    min-height: 100%;
+}
+.responsive_menu_items {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.menuitem {
+    position: relative;
+    color: #bdbdbd;
+    border-top: 1px solid #2f3138;
+    border-bottom: 1px solid #000000;
+    line-height: 2.5em;
+    overflow: hidden;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.chevron {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAwCAYAAACG5f33AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFxJREFUeNrkmg9klGEcx5/dMY4Y44hjxIgxRpSy7NwspSmNWZayGGmKFJGylCJSmlJMKctiylKa5aZpSmmMMWIcY4xxjGPEmPX72ffN23Z7732f3/Pe+97tx9dtd/e87/N+7n1+/563Ym1tTbmx8fHxLnq5QzqYSqXmbO+rMrMoaZDUz5dX6MsRl/A66OU5KUFK0/9xVb42QOLr/UTaLwZIsI7hoFG8VUsapferyhDeI1In/o7xdZL2Og2ocFrCBKkFv0Rlvo9JR0grZQKvl3Qrz/tLpCRpxhNAgteEXyDmcNL3pHbSaonDu0B67PB5ln0/adYVQILHt+0X0g4XJ39G6ilheJ0IGoVsAXdixhEgwWugl68kLz7uHulaCcJj/z5s8++FbJ50ADA3AyR4dYCnE2Uvkp6UELwU/HvM47gMlvPifwAJXi3gJQSTOkV6UwLw9sBF6WYSvwFxKbJhjc8LJ/aSdDjk8HYjOErSMAaYy7eE+aDpQrlPAfsDZzsZQni8un4JV9kIqc1K3/IFkWos5XrBSRxzp4CM/foPFAK6NkZqtee+W6UxcUCsE5yMXcI+e8QK0KpwPQ2CY3wnHcIKc5VIJ3BSyS+WQdjPBggvBrfUKDjGJODlvJZyNfTyjVQjPHkzaTkAeFyCvkW+p2vTcEc5z7WwwfQmqLp50NYc0I22SacVVOGmHyhMsC0bQp5YrLr5Kem80P38S5hFAG0lHief1YJJFatu5sbvdcH4TSWbGKCtyZAWJqG3STd9hHeZ9ECYPfCdN+fmy54AAmIjIMYEk+zB3WjaulAN6dqWbStjAAFRtxD3s24+gYgbFcBr9pr8awEExKNoBVVqTngFWf2Yoc7KqGAuOcCb8jpQGyAgSn91E3Wzl+bvVnNgeD91BosAAiLnWQPCpZNEzuXV6gEvLoDH+emE7vVHDCwf9mPdwiI/rZGo78KyjQtcSJsEnimAbK/Uekda1xKA6BbGTk3odngnSZ+lF24KIBu3868Ixte5jOxWz1K3ycGV0Bm1vqOowgSQ7aEwSeaA8MEhmlqdFUmvshtlpQojQKvSuC8Y34JkOJqnszKsZN3yc3A3KswA2a6S+gTjObLbN7qjiPSS/RZ2L/2mL9QvgGyXSC8E47mT0mvrrHQIjnUD7sW4mcgDnT6OYjmeFpyC04wmwfi7AOiL+XkHWhHvLOmd4BgSeH1+wisGQAsiNw5GVHGtH25ElTpAe9Y/VqTzvUbEVeUC0IJ4XK1vD/ppQ3AbqtwA2ot3v55a+IgqY7VcAbLx9ibvsU4bPi7Xte2qyDt/QQBkywGiqUc/JpTteZXtAJAtC4gZ4XG4EdqqNjxysR0AsvGea1LpP1Y3BZ+6HNQFBA2QzXr22OtDSDOAlwty8mEAyMZ7sM3K/UNIs1j+2aAnHhaAFhQ3EC3Yi2GYdJgAulmWC4C3EJYJhw2gU2CwAs5cmCYbRoD5UhNTKc+2AWhPjrOGk26j9leAAQDu6F3rDzHr6wAAAABJRU5ErkJggg==);
+    background-size: 100% 100%;
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    right: 12px;
+    top: 24px;
+}
+.responsive_menu_footer_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    white-space: normal;
+    color: #8a8a8a;
+    padding: 0 12px 24px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.minor_menuitem {
+    position: relative;
+    line-height: 2.5em;
+    color: #8a8a8a;
+    border: none;
+    overflow: hidden;
+    padding: 0 12px;
+    font-size: 0.75em;
+}
+.responsive_menu_footer_logo {
+    float: left;
+}
+.responsive_menu_valve_links {
+    color: #8a8a8a;
+    text-decoration: none;
+}
+.responsive_menu_valve_link {
+    color: #8a8a8a;
+}
+.top {
+    position:relative;
+    height: 104px;
+    padding: 0px 16px;
+    background-color: #171a21;
+}
+.topContent {
+    position: relative;
+    height: 104px;
+    margin: 0 auto;
+    z-index: 402;
+    max-width: 940px;
+}
+.logoBlock {
+    float: left;
+    padding-top: 30px;
+    margin-right: 40px;
+    height: 44px;
+}
+* {
+    margin: 0;
+}
+.topMenu {
+    color: #b8b6b4;
+    position: absolute;
+    left: 200px;
+}
+.itemTopMenu {
+    padding: 45px 7px 7px;
+    line-height: 16px;
+    float: left;
+    color: #b8b6b4;
+    font-size: 14px;
+}
+.itemTopMenu:hover {
+    color: #fff;
+}
+.actions {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    color: #b8b6b4;
+    font-size: 11px;
+    margin-right: 5px;
+}
+.menuActions {
+    line-height: 24px;
+}
+.downloadSteamLink {
+    display: inline-block;
+    margin-right: 3px;
+}
+.downloadLink {
+    background-color: #5c7e10;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+    background-repeat: no-repeat;
+    color: #e5e4dc;
+}
+.downloadLink:hover {
+    color: #fff;
+}
+.enterLink {
+    color: #b8b6b4;
+    padding: 0 4px;
+}
+.enterLink:hover {
+    color: #fff;
+}
+.language {
+    padding-left: 5px;
+    padding-right: 18px;
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.language:hover {
+    color: #fff;
+}
+.signUpBlock {
+    font-family: "Motiva Sans", Sans-serif;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpArea {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.titleSignUpForm {
+    margin: 10px 24px;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: .055em;
+    display: flex;
+    flex-direction: column;
+}
+.windowSignUpContainer {
+    background-color: #181a21;
+    border-radius: 4px;
+    padding: 24px 32px;
+    min-width: 636px;
+    margin: 0 auto;
+}
+.windowSignUp {
+    display: flex;
+}
+.signUpForm {
+    flex: 1;
+    display: grid;
+    grid-gap: 12px;
+}
+.loginForm {
+    display: grid;
+    grid-template-areas:
+        "label hint"
+        "input input";
+    grid-template-columns: 1fr min-content;
+    grid-gap: 2px;
+}
+.textOverLogin {
+    color: #1999ff;
+    font-size: 12px;
+    letter-spacing: .02em;
+}
+.formInput {
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+    background-color: #32353c;
+    font-size: 15px;
+    grid-area: input;
+    border: 1px solid #32353c;
+}
+.formInput:hover {
+    background-color: #3e424a;
+}
+.formInput:visited {
+    border: 1px solid #32353c;
+}
+.passwordForm {
+    display: grid;
+    grid-template-areas:
+        "label hint"
+        "input input";
+    grid-template-columns: 1fr min-content;
+    grid-gap: 2px;
+}
+.textOverPassword {
+    color: #afafaf;
+    font-size: 12px;
+    letter-spacing: .02em;
+    font-weight: 500;
+}
+.checkBoxArea {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkBox {
+    height: 14px;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: #32353c;
+    cursor: pointer;
+}
+.checkBox:hover {
+    background-color: #3e424a;
+}
+.checkMarkArea {
+    height: 100%;
+    display: flex;
+}
+.svgCheckMark {
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 320px;
+}
+.checkBoxText {
+    color: #afafaf;
+    font-size: 12px;
+    padding-left: 6px;
+    user-select: none;
+}
+.enterButtonArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enterButton {
+    min-width: 270px;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    border-radius: 2px;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .03em;
+    cursor: pointer;
+}
+.helpLink {
+    color: #afafaf;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+}
+.helpLink:hover {
+    color: #c6c4c4;
+}
+.hintMessageArea {
+    margin-left: 24px;
+}
+.structureHintMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+.titleHintMessage {
+    color: #1999ff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+.infoAboutSmartphone {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+}
+.svgSmartphone {
+    width: 120px;
+}
+.textHintMessage {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #afafaf;
+    margin: 8px;
+}
+.detailedInfoHintMessage {
+    background-color: rgba(255,255,255,.1);
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 8px 16px;
+}
+.stepForAdvancedUserHintMessage {
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #afafaf;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+.loginBottomRow {
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: #181A21;
+}
+.loginBottomRowItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+.subtext {
+    font-size: 14px;
+    color: #b8b6b4;
+}
+.linkKnowMore {
+    max-width: 60%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.linkKnowMore:hover {
+    color: #06BFFF;
+}
+.joinSteamRef {
+    margin: 20px 0 10px 0;
+    border-radius: 2px;
+    padding: 1px;
+}
+.joinSteam {
+    display: block;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.joinSteam:hover {
+    border: 1px solid #fff;
+
+}
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px 0 60px 0;
+    margin: 0;
+    background: #171a21;
+}
+.footerContent {
+    max-width: 940px;
+    margin: 0px auto;
+    padding-top: 16px;
+}
+.rule {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+.logoSteam {
+    float: right;
+    border: 0;
+}
+.logoValve {
+    padding-top: 2px;
+    float: left;
+}
+.footerText {
+    float: left;
+    margin-left: 12px;
+    color: #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.footerLink {
+    color: #C6D4DF;
+    font-size: 12px;
+    line-height: 16px;
+}
+.footerLink2 {
+    color: #C6D4DF;
+    font-size: 13px;
+    line-height: 16px;
+}
+.footerLink:hover {
+    color: #fff;
+}
+.footerLink2:hover {
+    color: #fff;
+}
+
+@media screen and (max-width:910px)
+{
+    .top
+    {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .responsiveTop {
+        display: block;
+    }
+    .container {
+        min-width: 360px;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .signUpBlock {
+        align-items: center;
+    }
+    .signUpArea {
+        align-items: center;
+        width: 360px;
+    }
+    .windowSignUpContainer {
+        display: flex;
+        background-color: transparent;
+        align-items: center;
+        margin: 0 auto;
+        min-width: 360px;
+    }
+    .windowSignUp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hintMessageArea {
+        margin-top: 48px;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .svgSmartphone {
+        display: none;
+    }
+    .structureHintMessage {
+        margin: 0;
+        align-items: center;
+    }
+    .loginBottomRow {
+        flex-direction: column;
+    }
+}
