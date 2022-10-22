@@ -6,7 +6,7 @@ namespace NetConsoleApp
     {
         static void Main(string[] args)
         {
-            Server_Logic.Start();
+            new HttpServer().Start();
         }
     }
 }

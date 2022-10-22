@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Server_App\\FDIS\\01.10.2022\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj": {}
+    "D:\\Server_App\\FDIS\\week_4\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj": {}
   },
   "projects": {
-    "D:\\Server_App\\FDIS\\01.10.2022\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj": {
+    "D:\\Server_App\\FDIS\\week_4\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Server_App\\FDIS\\01.10.2022\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj",
+        "projectUniqueName": "D:\\Server_App\\FDIS\\week_4\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj",
         "projectName": "HTTP_Sersver",
-        "projectPath": "D:\\Server_App\\FDIS\\01.10.2022\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj",
+        "projectPath": "D:\\Server_App\\FDIS\\week_4\\HTTP_Sersver\\HTTP_Sersver\\HTTP_Sersver.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "D:\\Server_App\\FDIS\\01.10.2022\\HTTP_Sersver\\HTTP_Sersver\\obj\\",
+        "outputPath": "D:\\Server_App\\FDIS\\week_4\\HTTP_Sersver\\HTTP_Sersver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
