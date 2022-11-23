@@ -1,0 +1,261 @@
+head {
+    display: none;
+}
+body {
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+}
+.topBox {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: right;
+    padding-right: 10px;
+    color: black;
+}
+.topButton {
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 11px;
+}
+a {
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.link1 {
+    color: black;
+}
+.link1:visited {
+    color: black;
+}
+.link {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+.link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+link:visited {
+    color: #fff;
+}
+.backSVG {
+    display: inline-block;
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    padding-left: 8px;
+    margin-left: 18px;
+    margin-right: 23px;
+    border-radius: 50%;
+}
+.backSVG:hover {
+    background-color: #e4dddd;
+}
+.pointsWhoApps {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    padding: 8px 9px;
+}
+.imageNinePoints {
+    margin-left: -9px;
+    cursor: pointer;
+}
+.buttonEnterAccount {
+    display: inline-block;
+    padding: 8px 26px;
+
+    background-color: #1a73e8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.buttonEnterAccount:hover {
+    background-color: #1768d1;
+}
+.card {
+    display: flex;
+    width: auto;
+    height: 180px;
+    justify-content: center;
+    margin-top: -12px;
+}
+.searchLine {
+    display: flex;
+    margin-top: -10px;
+    justify-content: center;
+    align-content: flex-end;
+}
+.RNNXgb {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 584px;
+}
+.RNNXgb:hover {
+    box-shadow: 1px 1px 5px #ccc;
+}
+.RNNXgb:active {
+    box-shadow: 1px 1px 5px #ccc;
+}
+.SDkEP {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+.iblpc {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+.CcAdnb {
+    margin: auto;
+}
+.QCzoEc {
+    margin-top: 3px;
+    color: #9aa0a6;
+}
+.z1asCe {
+    display: inline-block;
+    fill: currentColor;
+    position: relative;
+}
+.a4bIc {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.gLFyf {
+    padding: 0;
+    display: flex;
+    flex: 100%;
+    height: 34px;
+    font-size: 16px;
+    border: none;
+}
+.gLFyf:focus {
+    outline: none;
+    border: none;
+}
+
+.dRYYxd {
+    display: flex;
+    margin-top: -5px;
+}
+.Umvnrc {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 0 8px;
+}
+.ly0Ckb {
+    background: url("../img/keyBoard.png") no-repeat center;
+    width: 24px;
+}
+.XDyW0e {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 0 8px;
+}
+.goxjub {
+    width: 24px;
+}
+.areaButtonsUnderLineSearch {
+    display: flex;
+    height: 88px;
+    width: 584px;
+    justify-content: center;
+}
+.buttonUnderLineSearch {
+    display: inline-block;
+    padding: 8px 26px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: black;
+    text-decoration: none;
+    border: none;
+    margin: 27px 5px;
+}
+.buttonUnderLineSearch:hover {
+    box-shadow: 1px 1px 5px #ccc;
+}
+.spaceBetweenSearchLineAndFooter {
+    height: 165px;
+    width: auto;
+}
+.footer {
+    width: 100%;
+    height: 150px;
+    background: #f2f2f2;
+    font-family: sans-serif;
+    color: #70757a;
+    font-size: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+}
+.ecology {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.leaf {
+    padding-right: 5px;
+}
+.footerLink:visited {
+    color: #70757a;
+}
+.footerButtons {
+    display: flex;
+    width: auto;
+}
+.leftFooterButtons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.leftFooterButton {
+    width: auto;
+    padding: 15px;
+}
+.rightFooterButtons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.rightFooterButton {
+    width: auto;
+    padding: 15px;
+}
